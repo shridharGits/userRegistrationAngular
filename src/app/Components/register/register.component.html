@@ -1,0 +1,22 @@
+<!-- <div>
+    <p>Name</p>
+    <input type="text" [(ngModel)]="name" >
+    <p>Email</p>
+    <input type="email">
+    <p>Password</p>
+    <input type="password">
+
+    <a routerLink="/login"><button (click)="addUser()">Register</button></a>
+</div> -->
+
+<form (submit)="addUser()">
+    <p>Name</p>
+    <input type="text" [(ngModel)]="name" name="name" id="name">
+    <p>Email</p>
+    <input type="email" [(ngModel)]="email" name="email" id="email">
+    <p>Password</p>
+    <input type="password" [(ngModel)]="password" name="password" id="password">
+
+    <!-- <a routerLink="/login"><button (click)="addUser()">Register</button></a> -->
+    <button type="submit">Register</button>
+</form>
